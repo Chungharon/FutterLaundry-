@@ -1,24 +1,20 @@
 name: laundryhub
 description: "A new Flutter project."
 
-publish_to: 'none' 
+publish_to: 'none'
 
 
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.8.1
+  sdk: '>=3.8.1 <4.0.0' 
 
 # ----------------- Packages -----------------#
 dependencies:
   flutter:
     sdk: flutter
 
-# Utility Packages
-
-
-# Icons
-  cupertino_icons: ^1.0.8
+  # Utility Packages
   http: ^1.4.0
   intl: ^0.20.2
   get: ^4.7.2
@@ -26,6 +22,10 @@ dependencies:
   logger: ^2.5.0
   get_storage: ^2.1.1
   lottie: ^3.3.1
+  flutter_native_splash: ^2.4.6
+
+  # Icons
+  cupertino_icons: ^1.0.8
   iconsax: ^0.0.8
 
 
@@ -37,37 +37,37 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
- 
-  flutter_lints: ^5.0.0
-
-
-
+  flutter_lints: ^6.0.0
 
 
 
 flutter:
-
-
   uses-material-design: true
 
- # ----------------- Assets -----------------#
+  # ----------------- Assets -----------------#
   assets:
-    - assets/logos/
-    - assets/Icons/brands/
-    - assets/images/
+    - assets/logos/logo_splash_dark.png
+    - assets/logos/logo_splash_light.png
+    - assets/Icons/brands/ 
+    - assets/images/       
 
-  # ----------------- Local fonts -----------------#  
+  # ----------------- Local Fonts -----------------#
   fonts:
-     - family: Schyler
-       fonts:
-        - asset: fonts/Schyler-Regular.ttf
-        - asset: fonts/Schyler-Italic.ttf
+    # --- coolvetica family ---
+    - family: coolvetica 
+      fonts: 
+        - asset: assets/fonts/coolvetica_Regular.otf 
+          weight: 400
+        - asset: assets/fonts/coolvetica_regular_italic.otf 
+          style: italic 
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-MediumItalic.ttf 
+          weight: 500
           style: italic
-     - family: Trajan Pro
-       fonts:
-         - asset: fonts/TrajanPro.ttf
-         - asset: fonts/TrajanPro_Bold.ttf
-           weight: 700
-  
-
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 800
