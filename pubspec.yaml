@@ -19,6 +19,14 @@ dependencies:
 
 # Icons
   cupertino_icons: ^1.0.8
+  http: ^1.4.0
+  intl: ^0.20.2
+  get: ^4.7.2
+  url_launcher: ^6.3.1
+  logger: ^2.5.0
+  get_storage: ^2.1.1
+  lottie: ^3.3.1
+  iconsax: ^0.0.8
 
 
 
