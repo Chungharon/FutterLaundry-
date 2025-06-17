@@ -23,10 +23,12 @@ dependencies:
   get_storage: ^2.1.1
   lottie: ^3.3.1
   flutter_native_splash: ^2.4.6
+  smooth_page_indicator: ^1.2.1
 
   # Icons
   cupertino_icons: ^1.0.8
   iconsax: ^0.0.8
+  leak_tracker: ^10.0.9
 
 
 
@@ -48,8 +50,11 @@ flutter:
   assets:
     - assets/logos/logo_splash_dark.png
     - assets/logos/logo_splash_light.png
-    - assets/Icons/brands/ 
-    - assets/images/       
+    - assets/Icons/brands/
+    - assets/images/on_boarding_images/sammy-line-searching.gif
+    - assets/images/on_boarding_images/sammy-line-no-connection.gif
+    - assets/images/on_boarding_images/sammy-line-delivery.gif
+   
 
   # ----------------- Local Fonts -----------------#
   fonts:
@@ -71,3 +76,16 @@ flutter:
           weight: 600
         - asset: assets/fonts/Poppins-Bold.ttf
           weight: 800
+
+# ----------------- Flutter Native Splash Configuration -----------------#
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/logos/logo_splash_light.png
+  color_dark: "#121212"
+  image_dark: assets/logos/logo_splash_dark.png
+  # REMOVE THIS LINE: animation_duration: 1000
+  fullscreen: true
+  android: true
+  android_gravity: center
+  ios: true
+  ios_content_mode: center
