@@ -52,4 +52,6 @@ class TTexts {
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
 
+  static var and;
+
 }
