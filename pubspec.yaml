@@ -54,6 +54,10 @@ flutter:
     - assets/images/on_boarding_images/sammy-line-searching.gif
     - assets/images/on_boarding_images/sammy-line-no-connection.gif
     - assets/images/on_boarding_images/sammy-line-delivery.gif
+    - assets/logos/google-icon.png
+    - assets/logos/facebook-icon.png
+    - assets/logos/email-icon.png
+    
    
 
   # ----------------- Local Fonts -----------------#
@@ -83,7 +87,6 @@ flutter_native_splash:
   image: assets/logos/logo_splash_light.png
   color_dark: "#121212"
   image_dark: assets/logos/logo_splash_dark.png
-  # REMOVE THIS LINE: animation_duration: 1000
   fullscreen: true
   android: true
   android_gravity: center
