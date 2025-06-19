@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_utils/get_utils.dart';
 import 'package:laundryhub/common/styles/spacing_styles.dart';
-import 'package:laundryhub/common/widgets_login_signup/form_divider.dart';
+import 'package:laundryhub/common/widgets/login_signup/form_divider.dart';
 import 'package:laundryhub/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:laundryhub/features/authentication/screens/login/widgets/login_header.dart';
-import 'package:laundryhub/common/widgets_login_signup/social_buttons.dart';
+import 'package:laundryhub/common/widgets/login_signup/social_buttons.dart';
 import 'package:laundryhub/utils/constants/sizes.dart';
 import 'package:laundryhub/utils/constants/text_strings.dart';
 import 'package:laundryhub/utils/helpers/helper_functions.dart';

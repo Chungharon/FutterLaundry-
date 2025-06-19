@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:laundryhub/features/authentication/screens/signup.wigets/verify_email.dart';
 import 'package:laundryhub/utils/constants/colors.dart';
 import 'package:laundryhub/utils/constants/sizes.dart';
 import 'package:laundryhub/utils/constants/text_strings.dart';
@@ -126,7 +129,7 @@ class TSignupForm extends StatelessWidget {
           /// Sign Up Button
           SizedBox(
             width: double.infinity,
-            child: ElevatedButton(onPressed: (){},
+            child: ElevatedButton(onPressed: () => Get.to(() => const VerifyEmailScreen()),
             child: const Text(TTexts.createAccount),
             ),
           )

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/utils.dart';
-import 'package:laundryhub/common/widgets_login_signup/form_divider.dart';
-import 'package:laundryhub/common/widgets_login_signup/social_buttons.dart';
+import 'package:laundryhub/common/widgets/login_signup/form_divider.dart';
+import 'package:laundryhub/common/widgets/login_signup/social_buttons.dart';
 import 'package:laundryhub/features/authentication/screens/signup.wigets/signup_form.dart';
 import 'package:laundryhub/utils/constants/sizes.dart';
 import 'package:laundryhub/utils/constants/text_strings.dart';

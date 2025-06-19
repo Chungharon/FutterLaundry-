@@ -57,7 +57,11 @@ flutter:
     - assets/logos/google-icon.png
     - assets/logos/facebook-icon.png
     - assets/logos/email-icon.png
-    
+    - assets/images/animations/sammy-line-man-receives-a-mail.png
+    - assets/images/animations/sammy-line-come-back-later.png
+    - assets/images/animations/sammy-line-success.png
+    - assets/images/animations/sammy-line-sale.png
+    - assets/images/animations/sammy-line-workout.gif
    
 
   # ----------------- Local Fonts -----------------#
