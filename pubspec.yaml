@@ -51,6 +51,7 @@ flutter:
     - assets/logos/logo_splash_dark.png
     - assets/logos/logo_splash_light.png
     - assets/Icons/brands/
+    - assets/Icons/categories/
     - assets/images/on_boarding_images/sammy-line-searching.gif
     - assets/images/on_boarding_images/sammy-line-no-connection.gif
     - assets/images/on_boarding_images/sammy-line-delivery.gif

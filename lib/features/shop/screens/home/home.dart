@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:laundryhub/common/widgets/custom_shapes/containers/primary_header_container.dart';
+import 'package:laundryhub/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:laundryhub/common/widgets/texts/section_heading.dart';
 import 'package:laundryhub/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:laundryhub/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:laundryhub/utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -15,10 +19,31 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   /// --Appbar -- Tutorial [Section = 3, video = 3]
-                  THomeAppBar(),
+                  const THomeAppBar(),
+                  const SizedBox(height: TSizes.spaceBtwSection),
 
                   /// -- Searbar -- Tutorial [Section = 3, Video = 4]
+                  TSearchContainer(text: 'Search Services'),
+                  SizedBox(height: TSizes.spaceBtwSection),
+
                   /// -- Categories -- Tutorial [Section = 3, video = 4]
+                  Padding(
+                    padding: EdgeInsets.only(left: TSizes.defaultSpace),
+                    child: Column(
+                      children: [
+                        /// Heading
+                        TSectionHeading(
+                          title: 'Popular Services',
+                          showActionButton: false,
+                          textColor: Colors.white,
+                        ),
+                        const SizedBox(height: TSizes.spaceBtwItems),
+
+                        /// Categories as services to be displayed - Attach Backend for local storage categories
+                        THomeCategories(),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
