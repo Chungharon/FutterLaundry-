@@ -8,6 +8,7 @@ import 'package:laundryhub/utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,6 @@ class HomeScreen extends StatelessWidget {
                     padding: EdgeInsets.only(left: TSizes.defaultSpace),
                     child: Column(
                       children: [
-                        /// Heading
                         TSectionHeading(
                           title: 'Popular Services',
                           showActionButton: false,

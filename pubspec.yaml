@@ -51,7 +51,16 @@ flutter:
     - assets/logos/logo_splash_dark.png
     - assets/logos/logo_splash_light.png
     - assets/Icons/brands/
-    - assets/Icons/categories/
+    - assets/icons/categories/icons8-bowling-64.png
+    - assets/icons/categories/icons8-cosmetics-64.png
+    - assets/icons/categories/icons8-dining-chair-64.png
+    - assets/icons/categories/icons8-dog-heart-64.png
+    - assets/icons/categories/icons8-school-uniform-64.png
+    - assets/icons/categories/icons8-shoes-64.png
+    - assets/icons/categories/icons8-smartphone-64.png
+    - assets/icons/categories/icons8-sparkling-diamond-64.png
+    - assets/icons/categories/icons8-tailors-dummy-64.png
+    - assets/icons/categories/icons8-wooden-toy-car-50.png
     - assets/images/on_boarding_images/sammy-line-searching.gif
     - assets/images/on_boarding_images/sammy-line-no-connection.gif
     - assets/images/on_boarding_images/sammy-line-delivery.gif

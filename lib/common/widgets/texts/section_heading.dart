@@ -4,7 +4,7 @@ class TSectionHeading extends StatelessWidget {
   const TSectionHeading({
     super.key, 
     this.textColor, 
-    this.showActionButton = true, 
+    this.showActionButton = false, 
     required this.title, 
     this.buttonTitle = 'View all', 
     this.onPressed

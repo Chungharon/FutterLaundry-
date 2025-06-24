@@ -23,7 +23,7 @@ class TVerticalImageText extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.only(right: TSizes.spaceBtwItems),
+        padding: const EdgeInsets.only(left: TSizes.spaceBtwItems, right: TSizes.spaceBtwItems),
         child: Column(
           children: [
             /// circular icons

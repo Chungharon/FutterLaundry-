@@ -38,6 +38,7 @@ class TPrimaryHeaderContainer extends StatelessWidget {
                   backgroundColor: TColors.textAccent.withAlpha(25),
                 ),
               ),
+              child,
             ],
           ),
         ),
