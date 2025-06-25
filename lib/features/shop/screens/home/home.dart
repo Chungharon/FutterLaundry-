@@ -4,11 +4,12 @@ import 'package:laundryhub/common/widgets/custom_shapes/containers/search_contai
 import 'package:laundryhub/common/widgets/texts/section_heading.dart';
 import 'package:laundryhub/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:laundryhub/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:laundryhub/features/shop/screens/home/widgets/promo_slider.dart';
+import 'package:laundryhub/utils/constants/image_strings.dart';
 import 'package:laundryhub/utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
-  
 
   @override
   Widget build(BuildContext context) {
@@ -47,9 +48,16 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+
+            /// banners
+            Padding(
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              child: TPromoSlider(banners: [TImages.promoBanner1, TImages.promoBanner2, TImages.promoBanner3]),
+            ),
           ],
         ),
       ),
     );
   }
 }
+

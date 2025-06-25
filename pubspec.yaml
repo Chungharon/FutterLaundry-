@@ -24,6 +24,7 @@ dependencies:
   lottie: ^3.3.1
   flutter_native_splash: ^2.4.6
   smooth_page_indicator: ^1.2.1
+  carousel_slider: ^5.1.1
 
   # Icons
   cupertino_icons: ^1.0.8
@@ -72,6 +73,9 @@ flutter:
     - assets/images/animations/sammy-line-success.png
     - assets/images/animations/sammy-line-sale.png
     - assets/images/animations/sammy-line-workout.gif
+    - assets/images/products/promo-banner-3.png
+    - assets/images/products/promo-banner-1.png
+    - assets/images/products/promo-banner-2.png
    
 
   # ----------------- Local Fonts -----------------#
