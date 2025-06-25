@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:laundryhub/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:laundryhub/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:laundryhub/common/widgets/layouts/grid_layout.dart';
+import 'package:laundryhub/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:laundryhub/common/widgets/texts/section_heading.dart';
 import 'package:laundryhub/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:laundryhub/features/shop/screens/home/widgets/home_categories.dart';
@@ -49,10 +51,19 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
-            /// banners
+            /// body -- Tutoarial
             Padding(
               padding: const EdgeInsets.all(TSizes.defaultSpace),
-              child: TPromoSlider(banners: [TImages.promoBanner1, TImages.promoBanner2, TImages.promoBanner3]),
+              child: Column(
+                children: [
+                  /// --Promo Slider -- Tutorial
+                  const TPromoSlider(banners: [TImages.promoBanner1, TImages.promoBanner2, TImages.promoBanner3]),
+                  const SizedBox(height: TSizes.spaceBtwSection),
+
+                  /// -- Popular Products -- Tutorial
+                  TGridLayout(itemCount: 4, itemBuilder: (_, index) => const TProductCardVertical()),
+                ],
+              ),
             ),
           ],
         ),
@@ -60,4 +71,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
