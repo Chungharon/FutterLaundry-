@@ -35,6 +35,7 @@ class HomeScreen extends StatelessWidget {
                     padding: EdgeInsets.only(left: TSizes.defaultSpace),
                     child: Column(
                       children: [
+                        /// Heading
                         TSectionHeading(
                           title: 'Popular Services',
                           showActionButton: false,
@@ -51,17 +52,30 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
-            /// body -- Tutoarial
+            /// body -- Tutorial
             Padding(
               padding: const EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [
                   /// --Promo Slider -- Tutorial
-                  const TPromoSlider(banners: [TImages.promoBanner1, TImages.promoBanner2, TImages.promoBanner3]),
+                  const TPromoSlider(
+                    banners: [
+                      TImages.promoBanner1,
+                      TImages.promoBanner2,
+                      TImages.promoBanner3,
+                    ],
+                  ),
+                  const SizedBox(height: TSizes.spaceBtwSection),
+
+                  /// -- Heading
+                  TSectionHeading(title: 'Popular Services', onPressed: () {}),
                   const SizedBox(height: TSizes.spaceBtwSection),
 
                   /// -- Popular Products -- Tutorial
-                  TGridLayout(itemCount: 4, itemBuilder: (_, index) => const TProductCardVertical()),
+                  TGridLayout(
+                    itemCount: 4,
+                    itemBuilder: (_, index) => const TProductCardVertical(),
+                  ),
                 ],
               ),
             ),

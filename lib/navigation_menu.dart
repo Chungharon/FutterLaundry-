@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:laundryhub/features/shop/screens/home/home.dart';
+import 'package:laundryhub/features/shop/screens/store/store.dart';
 import 'package:laundryhub/utils/constants/colors.dart';
 import 'package:laundryhub/utils/helpers/helper_functions.dart';
 
@@ -43,9 +44,8 @@ class NavigationController extends GetxController {
 
   final screens = [
     const HomeScreen(),
-    Container(color: Colors.green),
+    const StoreScreen(),
     Container(color: Colors.purple),
     Container(color: Colors.orange),
-    Container(color: Colors.blue),
   ];
 }

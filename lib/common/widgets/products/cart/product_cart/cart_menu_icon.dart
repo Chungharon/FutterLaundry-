@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:laundryhub/utils/constants/colors.dart';
 
-class TCartCountIcon extends StatelessWidget {
-  const TCartCountIcon({super.key, required this.onPressed, required this.iconColor });
+class TCartCounterIcon extends StatelessWidget {
+  const TCartCounterIcon({super.key, required this.onPressed, required this.iconColor });
 
   final VoidCallback onPressed;
   final Color iconColor;
@@ -13,8 +13,8 @@ class TCartCountIcon extends StatelessWidget {
     return Stack(
       children: [
         IconButton(
-          onPressed: () {},
-          icon: Icon(Iconsax.shopping_bag, color: TColors.white),
+          onPressed: onPressed, // <-- THIS LINE WAS CHANGED
+          icon: Icon(Iconsax.shopping_bag, color: iconColor), // <-- THIS LINE WAS CHANGED
         ),
         Positioned(
           right: 0,
@@ -30,7 +30,7 @@ class TCartCountIcon extends StatelessWidget {
                 '2',
                 style: Theme.of(context).textTheme.labelLarge!.apply(
                   color: TColors.white,
-                  fontSizeFactor: 0.0,
+                  fontSizeFactor: 1.0, // <-- THIS LINE WAS CHANGED
                 ),
               ),
             ),
