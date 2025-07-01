@@ -26,7 +26,7 @@ class TSectionHeading extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),
-        if(showActionButton) TextButton(onPressed: onPressed, child: const Text('buttonTitle')),
+        if(showActionButton) TextButton(onPressed: onPressed, child: Text('View all')),
       ],
     );
   }
