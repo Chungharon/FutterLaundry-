@@ -49,6 +49,7 @@ flutter:
 
   # ----------------- Assets -----------------#
   assets:
+    - assets/images/user/user.png
     - assets/logos/logo_splash_dark.png
     - assets/logos/logo_splash_light.png
     - assets/Icons/brands/
