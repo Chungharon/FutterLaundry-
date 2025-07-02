@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:laundryhub/common/widgets/appbar/appbar.dart';
 import 'package:laundryhub/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:laundryhub/common/widgets/list_tiles/settings_menu_title.dart';
 import 'package:laundryhub/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:laundryhub/common/widgets/texts/section_heading.dart';
+import 'package:laundryhub/features/personalization/screens/profile/profile.dart';
 import 'package:laundryhub/utils/constants/colors.dart';
 import 'package:laundryhub/utils/constants/sizes.dart';
 
@@ -21,10 +24,11 @@ class SettingsScreen extends StatelessWidget {
             TPrimaryHeaderContainer(
               child: Column(
                 children: [
+                  /// Appbar
                   TAppBar(title: Text('Account', style: Theme.of(context).textTheme.headlineMedium!.apply(color: TColors.white),)),
 
-                  /// Categories
-                  const TUserProfileTab(),
+                  /// User Profile Card
+                  TUserProfileTile(onPressed: () => Get.to(() => const ProfileScreen())),
                   const SizedBox(height: TSizes.spaceBtwSection),
                 ],
               ),
