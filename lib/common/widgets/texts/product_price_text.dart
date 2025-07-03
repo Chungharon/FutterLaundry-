@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class TProductPriceTitle extends StatelessWidget {
-  const TProductPriceTitle({
+class TProductPriceText extends StatelessWidget {
+  const TProductPriceText({
     super.key,
     this.currencySign = '\$',
     required this.price,
     this.isLarge = false,
     this.maxLines = 1,
-    this.lineThrough = false,
+    this.lineThrough = false, 
   });
 
   final String currencySign, price;
