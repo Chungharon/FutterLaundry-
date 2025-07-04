@@ -33,6 +33,7 @@ dependencies:
   # Product Specific
   readmore: ^3.0.0
   carousel_slider: ^5.1.1
+  flutter_rating_bar: ^4.0.1
 
 
 
@@ -157,6 +158,9 @@ flutter:
     - assets/images/products/slipper-product-2.png
     - assets/images/products/slipper-product-3.png
     - assets/images/products/slipper-product.png
+    - assets/images/reviews/review_profile_image_1.jpg
+    - assets/images/reviews/review_profile_image_1.jpg
+    - assets/images/reviews/review_profile_image_3.jpeg
    
 
   # ----------------- Local Fonts -----------------#
