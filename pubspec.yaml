@@ -24,12 +24,15 @@ dependencies:
   lottie: ^3.3.1
   flutter_native_splash: ^2.4.6
   smooth_page_indicator: ^1.2.1
-  carousel_slider: ^5.1.1
 
   # Icons
   cupertino_icons: ^1.0.8
   iconsax: ^0.0.8
   leak_tracker: ^10.0.9
+
+  # Product Specific
+  readmore: ^3.0.0
+  carousel_slider: ^5.1.1
 
 
 
