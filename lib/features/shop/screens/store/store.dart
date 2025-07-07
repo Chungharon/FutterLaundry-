@@ -5,7 +5,7 @@ import 'package:laundryhub/common/widgets/custom_shapes/containers/rounded_conta
 import 'package:laundryhub/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:laundryhub/common/widgets/images/t_circular_image.dart';
 import 'package:laundryhub/common/widgets/layouts/grid_layout.dart';
-import 'package:laundryhub/common/widgets/products/cart/product_cart/cart_menu_icon.dart';
+import 'package:laundryhub/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:laundryhub/common/widgets/texts/section_heading.dart';
 import 'package:laundryhub/common/widgets/texts/t_brand_title_text_with_verified_icon.dart';
 import 'package:laundryhub/features/shop/screens/store/widget/category_tab.dart';

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:laundryhub/common/widgets/texts/section_heading.dart';
 import 'package:laundryhub/features/shop/screens/product_details/widgets/bottom_add_to_cart_widget.dart';

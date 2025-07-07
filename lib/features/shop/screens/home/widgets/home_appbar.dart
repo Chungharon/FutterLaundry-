@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:laundryhub/common/widgets/appbar/appbar.dart';
-import 'package:laundryhub/common/widgets/products/cart/product_cart/cart_menu_icon.dart';
+import 'package:laundryhub/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:laundryhub/utils/constants/colors.dart';
 import 'package:laundryhub/utils/constants/text_strings.dart';
 
