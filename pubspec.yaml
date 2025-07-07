@@ -56,7 +56,16 @@ flutter:
     - assets/images/user/user.png
     - assets/logos/logo_splash_dark.png
     - assets/logos/logo_splash_light.png
-    - assets/Icons/brands/
+    - assets/icons/brands/acer_logo.png
+    - assets/icons/brands/adidas-logo.png
+    - assets/icons/brands/apple-logo.png
+    - assets/icons/brands/herman-miller-logo.png
+    - assets/icons/brands/ikea_logo.png
+    - assets/icons/brands/jordan-logo.png
+    - assets/icons/brands/kenwood-logo.png
+    - assets/icons/brands/nike.png
+    - assets/icons/brands/puma-logo.png
+    - assets/icons/brands/zara-logo.png
     - assets/icons/categories/icons8-bowling-64.png
     - assets/icons/categories/icons8-cosmetics-64.png
     - assets/icons/categories/icons8-dining-chair-64.png
@@ -161,6 +170,15 @@ flutter:
     - assets/images/reviews/review_profile_image_1.jpg
     - assets/images/reviews/review_profile_image_1.jpg
     - assets/images/reviews/review_profile_image_3.jpeg
+    - assets/icons/payment_methods/apple-pay.png
+    - assets/icons/payment_methods/credit-card.png
+    - assets/icons/payment_methods/google-pay.png
+    - assets/icons/payment_methods/master-card.png
+    - assets/icons/payment_methods/paypal.png
+    - assets/icons/payment_methods/paystack.png
+    - assets/icons/payment_methods/paytm.png
+    - assets/icons/payment_methods/successful_payment_icon.png
+    - assets/icons/payment_methods/visa.png
    
 
   # ----------------- Local Fonts -----------------#
