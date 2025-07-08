@@ -28,7 +28,7 @@ dependencies:
   # Icons
   cupertino_icons: ^1.0.8
   iconsax: ^0.0.8
-  leak_tracker: ^10.0.9
+  leak_tracker: ^11.0.1
 
   # Product Specific
   readmore: ^3.0.0

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:laundryhub/common/widgets/appbar/appbar.dart';
 import 'package:laundryhub/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:laundryhub/common/widgets/products/cart/coupon_widgets.dart';
