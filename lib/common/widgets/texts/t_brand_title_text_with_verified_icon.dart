@@ -22,22 +22,20 @@ class TBrandTitleWithVerifiedIcon extends StatelessWidget {
   final TextAlign? textAlign;
   final TextSizes brandTextSize;
 
-
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min, // prevents infinite width issues
       children: [
-        Flexible(
-          child: TBrandTitleText(
-            title: title,
-            color: textColor,
-            textAlign: textAlign,
-            brandTextSize: brandTextSize,
-          ),
+        TBrandTitleText(
+          title: title,
+          color: textColor,
+          textAlign: textAlign,
+          brandTextSize: brandTextSize,
         ),
         const SizedBox(width: TSizes.xs),
-        Icon(Iconsax.verify5, color: TColors.primary, size: TSizes.iconXs)
+        Icon(Iconsax.verify5, color: iconColor, size: TSizes.iconXs),
       ],
     );
   }

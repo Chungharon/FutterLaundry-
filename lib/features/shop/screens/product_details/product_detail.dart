@@ -19,6 +19,7 @@ class ProductDetailScreen extends StatelessWidget {
       bottomNavigationBar: TBottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             /// 1 - Product Image Slider
             TProductImageSlider(),
