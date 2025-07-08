@@ -7,7 +7,10 @@ import 'package:laundryhub/common/widgets/custom_shapes/containers/primary_heade
 import 'package:laundryhub/common/widgets/list_tiles/settings_menu_title.dart';
 import 'package:laundryhub/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:laundryhub/common/widgets/texts/section_heading.dart';
+import 'package:laundryhub/features/personalization/screens/address/address.dart';
 import 'package:laundryhub/features/personalization/screens/profile/profile.dart';
+import 'package:laundryhub/features/shop/screens/cart/cart.dart';
+import 'package:laundryhub/features/shop/screens/order/order.dart';
 import 'package:laundryhub/utils/constants/colors.dart';
 import 'package:laundryhub/utils/constants/sizes.dart';
 
@@ -46,15 +49,18 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home, 
                     title: 'My Address', 
                     subTitle: 'Let us know where to find you',
+                    onTap: () => Get.to(() => const UserAddressScreen()),
                   ),TSettingsMenuTitle(
                     icon: Iconsax.shopping_bag, 
                     title: 'My Cart', 
                     subTitle: 'Add, remove or edit items in you cart',
+                    onTap: () => Get.to(() => const CartScreen()),
                   ),
                   TSettingsMenuTitle(
                     icon: Iconsax.bag_tick, 
                     title: 'My Orders', 
                     subTitle: 'Track your orders',
+                    onTap: () => Get.to(() => const OrderScreen()),
                     
                   ),
                   TSettingsMenuTitle(
