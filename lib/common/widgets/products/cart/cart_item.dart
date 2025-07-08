@@ -16,33 +16,33 @@ class TCartItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        
-        /// image
+        /// Image
         TRoundedImage(
           imageUrl: TImages.productImage1,
           width: 60,
           height: 60,
-          padding: EdgeInsets.all(TSizes.sm),
-          backgroundColor:THelperFunctions.isDarkMode(context) ? TColors.darkGrey : TColors.light,
+          padding: const EdgeInsets.all(TSizes.sm),
+          backgroundColor: THelperFunctions.isDarkMode(context) ? TColors.darkGrey : TColors.light,
         ),
         const SizedBox(width: TSizes.spaceBtwItems),
-    
+
         /// Title, Price, & Size
-        Expanded(
+        Expanded( // This Expanded is correct for the main Row
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const TBrandTitleWithVerifiedIcon(title: 'Nike'),
-              const Flexible(child: TProductTitleText(title: 'Black Sports Shoes sabdk bbbfjd bfjdk', maxLines: 1)),
-          
+              
+              const TProductTitleText(title: 'Black Sports Shoes sabdk bbbfjd bfjdk', maxLines: 1),
+              
               /// Attributes
               Text.rich(
                 TextSpan(
                   children: [
-                    TextSpan(text: 'Color', style: Theme.of(context).textTheme.bodySmall),
-                    TextSpan(text: 'Green', style: Theme.of(context).textTheme.bodyLarge),
-                    TextSpan(text: 'Size', style: Theme.of(context).textTheme.bodySmall),
+                    TextSpan(text: 'Color ', style: Theme.of(context).textTheme.bodySmall),
+                    TextSpan(text: 'Green ', style: Theme.of(context).textTheme.bodyLarge),
+                    TextSpan(text: 'Size ', style: Theme.of(context).textTheme.bodySmall),
                     TextSpan(text: 'UK 08', style: Theme.of(context).textTheme.bodyLarge),
                   ],
                 ),

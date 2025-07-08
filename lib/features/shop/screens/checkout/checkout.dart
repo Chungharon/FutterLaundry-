@@ -31,6 +31,7 @@ class CheckoutScreen extends StatelessWidget {
           child: Column(
             children: [
               /// --item in Cart
+              // In CheckoutScreen
               TCartItems(showAddRemoveButtons: false),
               SizedBox(height: TSizes.spaceBtwSection),
 
@@ -48,7 +49,6 @@ class CheckoutScreen extends StatelessWidget {
                     /// Pricing
                     TBillingAmountSection(),
                     SizedBox(height: TSizes.spaceBtwSection),
-
 
                     /// Divider
                     const Divider(),
