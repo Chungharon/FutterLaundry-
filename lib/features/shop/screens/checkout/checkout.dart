@@ -15,7 +15,7 @@ import 'package:laundryhub/utils/constants/sizes.dart';
 import 'package:laundryhub/utils/helpers/helper_functions.dart';
 
 class CheckoutScreen extends StatelessWidget {
-  const CheckoutScreen({Key? key}) : super(key: key);
+  const CheckoutScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
