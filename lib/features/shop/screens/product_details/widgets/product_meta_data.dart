@@ -15,6 +15,7 @@ class TProductMetaData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bool darkMode = Theme.of(context).brightness == Brightness.dark;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -26,23 +27,34 @@ class TProductMetaData extends StatelessWidget {
               radius: TSizes.sm,
               backgroundColor: TColors.secondary.withAlpha((0.8 * 255).toInt()),
               padding: const EdgeInsets.symmetric(horizontal: TSizes.sm, vertical: TSizes.xs),
-              child: Text('25%', style: Theme.of(context).textTheme.labelLarge!.apply(color: TColors.black)),
+              child: Text(
+                '25%',
+                style: Theme.of(context).textTheme.labelLarge!.apply(color: TColors.black),
+              ),
             ),
             const SizedBox(width: TSizes.spaceBtwItems),
 
             /// Price
-            Text('\$250', style: Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough)),
+            Text(
+              '\$250',
+              style: Theme.of(context)
+                  .textTheme
+                  .titleSmall!
+                  .apply(decoration: TextDecoration.lineThrough),
+            ),
             const SizedBox(width: TSizes.spaceBtwItems),
+
+            /// Final Price
             const TProductPriceText(price: '175', isLarge: true),
           ],
         ),
-        const SizedBox(width: TSizes.spaceBtwItems / 1.5),
 
+        const SizedBox(height: TSizes.spaceBtwItems),
 
         /// Title
         const TProductTitleText(title: 'Green Nike Sports Skirt'),
-        const SizedBox(width: TSizes.spaceBtwItems / 1.5),
-        
+        const SizedBox(height: TSizes.spaceBtwItems), 
+
         /// Stock Status
         Row(
           children: [
@@ -51,20 +63,25 @@ class TProductMetaData extends StatelessWidget {
             Text('In Stock', style: Theme.of(context).textTheme.titleMedium),
           ],
         ),
-        const SizedBox(width: TSizes.spaceBtwItems / 1.5),
+
+        const SizedBox(height: TSizes.spaceBtwItems / 1.5), 
+
         /// Brand
         Row(
           children: [
             TCircularImage(
-              image: TImages.cosmeticsIcon,
+              image: TImages.shoeIcon,
               width: 32,
               height: 32,
               overlayColor: darkMode ? TColors.white : TColors.black,
             ),
-            const TBrandTitleWithVerifiedIcon(title: 'Nike', brandTextSize: TextSizes.medium),
+            const SizedBox(width: TSizes.spaceBtwItems),
+            const TBrandTitleWithVerifiedIcon(
+              title: 'Nike',
+              brandTextSize: TextSizes.medium,
+            ),
           ],
         )
-        /// 
       ],
     );
   }

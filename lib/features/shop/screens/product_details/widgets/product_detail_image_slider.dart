@@ -34,7 +34,7 @@ class TProductImageSlider extends StatelessWidget {
             /// Image Slider
             Positioned(
               right: 0,
-              bottom: 10,
+              bottom: 30,
               left: TSizes.defaultSpace,
               child: SizedBox(
                 height: 80,
@@ -50,7 +50,7 @@ class TProductImageSlider extends StatelessWidget {
                     backgroundColor: dark ? TColors.dark : TColors.white,
                     border: Border.all(color: TColors.primary),
                     padding: const EdgeInsets.all(TSizes.sm),
-                    imageUrl: TImages.productImage7,
+                    imageUrl: TImages.productImage3,
                   ),
                 ),
               ),

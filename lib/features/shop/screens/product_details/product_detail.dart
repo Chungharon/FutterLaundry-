@@ -6,6 +6,7 @@ import 'package:laundryhub/features/shop/screens/product_details/widgets/bottom_
 import 'package:laundryhub/features/shop/screens/product_details/widgets/product_attributes.dart';
 import 'package:laundryhub/features/shop/screens/product_details/widgets/product_detail_image_slider.dart';
 import 'package:laundryhub/features/shop/screens/product_details/widgets/product_meta_data.dart';
+import 'package:laundryhub/features/shop/screens/product_details/widgets/rating_share_widget.dart';
 import 'package:laundryhub/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:laundryhub/utils/constants/sizes.dart';
 import 'package:readmore/readmore.dart';
@@ -16,8 +17,7 @@ class ProductDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: TBottomAddToCart(),
-      // Use CustomScrollView instead of SingleChildScrollView
+      bottomNavigationBar: const TBottomAddToCart(),
       body: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
@@ -32,23 +32,24 @@ class ProductDetailScreen extends StatelessWidget {
                   left: TSizes.defaultSpace,
                   bottom: TSizes.defaultSpace),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start, // Good practice for alignment
+                crossAxisAlignment: CrossAxisAlignment.start, 
                 children: [
                   /// - Rating & Share button
-                  TRatingAndShare(),
+                  const TRatingAndShare(),
 
                   /// - Price, Title, Stock & Brand
-                  TProductMetaData(),
+                  const TProductMetaData(),
+                  const SizedBox(height: TSizes.spaceBtwSection / 1.5),
 
                   /// - Attributes
-                  TProductAttributes(),
+                  const TProductAttributes(),
                   const SizedBox(height: TSizes.spaceBtwSection),
 
                   /// - Checkout Button
                   SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                          onPressed: () {}, child: Text('Checkout'))),
+                          onPressed: () {}, child: const Text('Checkout'))),
                   const SizedBox(height: TSizes.spaceBtwSection),
 
                   /// - Description
@@ -73,12 +74,14 @@ class ProductDetailScreen extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      TSectionHeading(
+                      const TSectionHeading(
                           title: 'Reviews (199)', showActionButton: false),
                       IconButton(
-                          icon: const Icon(Iconsax.arrow_right_3, size: 18),
-                          onPressed: () =>
-                              Get.to(() => const ProductReviewsScreen())),
+                        icon: const Icon(Iconsax.arrow_right_3, size: 18),
+                        onPressed: () =>
+                          Get.to(() => const ProductReviewsScreen()
+                        )
+                      ),
                     ],
                   ),
                   const SizedBox(height: TSizes.spaceBtwSection),
@@ -90,37 +93,4 @@ class ProductDetailScreen extends StatelessWidget {
       ),
     );
   }
-}
-
-class TRatingAndShare extends StatelessWidget {
- const TRatingAndShare({
-  super.key,
- });
-
- @override
- Widget build(BuildContext context) {
-  return Row(
-   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-   children: [
-    /// Rating
-    Row(
-     children: [
-      Icon(Iconsax.star5, color: Colors.amber, size: 24),
-      SizedBox(width: TSizes.spaceBtwItems / 2),
-      Text.rich(
-       TextSpan(
-        children: [
-         TextSpan(text: '5.0', style: Theme.of(context).textTheme.bodyLarge),
-         const TextSpan(text: '(199)'),
-        ]
-       )
-      )
-     ],
-    ),
- 
-    /// Share Button
-    IconButton(onPressed: () {}, icon: const Icon(Icons.share, size: TSizes.iconMd))
-   ],
-  );
- }
 }

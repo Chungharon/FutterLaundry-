@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:laundryhub/common/widgets/appbar/appbar.dart';
 import 'package:laundryhub/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:laundryhub/common/widgets/products/cart/coupon_widgets.dart';
@@ -16,7 +15,7 @@ import 'package:laundryhub/utils/constants/sizes.dart';
 import 'package:laundryhub/utils/helpers/helper_functions.dart';
 
 class CheckoutScreen extends StatelessWidget {
-  const CheckoutScreen({Key? key}) : super(key: key);
+  const CheckoutScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +31,7 @@ class CheckoutScreen extends StatelessWidget {
           child: Column(
             children: [
               /// --item in Cart
+              // In CheckoutScreen
               TCartItems(showAddRemoveButtons: false),
               SizedBox(height: TSizes.spaceBtwSection),
 
@@ -49,7 +49,6 @@ class CheckoutScreen extends StatelessWidget {
                     /// Pricing
                     TBillingAmountSection(),
                     SizedBox(height: TSizes.spaceBtwSection),
-
 
                     /// Divider
                     const Divider(),
