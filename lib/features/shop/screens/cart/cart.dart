@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:laundryhub/common/widgets/appbar/appbar.dart';
 import 'package:laundryhub/common/widgets/products/cart/cart_item.dart';
 import 'package:laundryhub/features/shop/screens/checkout/checkout.dart';
