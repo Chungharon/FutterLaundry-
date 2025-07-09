@@ -43,7 +43,7 @@ class TProductCardVertical extends StatelessWidget {
                   /// -- thumbnail image
                   TRoundedImage(imageUrl: TImages.productImage1, applyImageRadius: true),
       
-                  /// -- Sae tag
+                  /// -- Sale tag
                   Positioned(
                     top: 12,
                     child: TRoundedContainer(
@@ -58,7 +58,8 @@ class TProductCardVertical extends StatelessWidget {
                   const Positioned(
                     top: 0,
                     right: 0,
-                    child: TCircularIcon(icon: Iconsax.heart5, color: Colors.red,))
+                    child: TCircularIcon(icon: Iconsax.heart5, color: Colors.red)
+                  ),
                 ],
               ),
             ),
@@ -87,6 +88,8 @@ class TProductCardVertical extends StatelessWidget {
                   padding: EdgeInsets.only(left: TSizes.sm),
                   child: TProductPriceText(price: '35.0'),
                 ),
+
+                /// Add to Cart Button
                 Container(
                   decoration: const BoxDecoration(
                     color: TColors.dark,

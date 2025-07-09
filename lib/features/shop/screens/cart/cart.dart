@@ -31,8 +31,7 @@ class CartScreen extends StatelessWidget {
                     children: [
                       /// Entire Space
                       SizedBox(width: 70),
-
-
+                      
                       /// Add Remove Buttons
                       TProductQuantityWithAddRemoveButton(),
                     ],
