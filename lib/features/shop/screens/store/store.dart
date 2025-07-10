@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:laundryhub/common/widgets/appbar/appbar.dart';
 import 'package:laundryhub/common/widgets/appbar/tabbar.dart';
 import 'package:laundryhub/common/widgets/custom_shapes/containers/rounded_container.dart';
@@ -8,6 +10,7 @@ import 'package:laundryhub/common/widgets/layouts/grid_layout.dart';
 import 'package:laundryhub/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:laundryhub/common/widgets/texts/section_heading.dart';
 import 'package:laundryhub/common/widgets/texts/t_brand_title_text_with_verified_icon.dart';
+import 'package:laundryhub/features/shop/screens/brand/brand_products.dart';
 import 'package:laundryhub/features/shop/screens/store/widget/category_tab.dart';
 import 'package:laundryhub/utils/constants/colors.dart';
 import 'package:laundryhub/utils/constants/enums.dart';
@@ -62,8 +65,8 @@ class StoreScreen extends StatelessWidget {
 
                       /// -- Freatured Clothing Service
                       TSectionHeading(
-                        title: 'Featured Cloth Service',
-                        onPressed: () {},
+                        title: 'Featured Brands',
+                        onPressed: () => Get.to(() => const BrandProducts()),
                       ),
                       const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
