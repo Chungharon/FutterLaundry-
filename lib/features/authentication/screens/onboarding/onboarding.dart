@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:laundryhub/features/authentication/controllers.onboarding/onboarding.controller.dart';
+import 'package:laundryhub/features/authentication/controllers/onboarding/onboarding.controller.dart';
 import 'package:laundryhub/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:laundryhub/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:laundryhub/features/authentication/screens/onboarding/widgets/onboarding_page.dart';

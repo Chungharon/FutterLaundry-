@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:laundryhub/features/authentication/controllers.onboarding/onboarding.controller.dart';
+import 'package:laundryhub/features/authentication/controllers/onboarding/onboarding.controller.dart';
 import 'package:laundryhub/utils/constants/sizes.dart';
 import 'package:laundryhub/utils/device/device_utility.dart';
 
