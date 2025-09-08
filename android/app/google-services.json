@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "822733233373",
+    "project_id": "ecommerceapp-6e6c9",
+    "storage_bucket": "ecommerceapp-6e6c9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822733233373:android:e732c21f3efad7fa22cf34",
+        "android_client_info": {
+          "package_name": "com.example.laundryhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822733233373-vd0gns7aaeaj2f8lgjivo3bg0ulpj6lp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.laundryhub",
+            "certificate_hash": "9a38c65e705ad9ee10bfdd008b5d914eb32e9268"
+          }
+        },
+        {
+          "client_id": "822733233373-i1dn1p2jiblh23q5ljrp4a060loiblha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjTkTRTubHuPzEie0wucGTNDvehDvD9UA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822733233373-i1dn1p2jiblh23q5ljrp4a060loiblha.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "822733233373-od99s9d8vuob3k58p7fa92f4ti4ah7sl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.laundryhub"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
