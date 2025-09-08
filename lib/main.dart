@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:laundryhub/app.dart';
-import 'package:laundryhub/data/repositories_authentication/authentication_repository.dart';
+import 'package:laundryhub/data/repositories/authentication/authentication_repository.dart';
 import 'package:laundryhub/firebase_options.dart';
 
 Future<void> main() async {
