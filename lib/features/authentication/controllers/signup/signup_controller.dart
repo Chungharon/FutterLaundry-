@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:laundryhub/data/models/user_model.dart';
 import 'package:laundryhub/data/repositories/authentication/authentication_repository.dart';
 import 'package:laundryhub/data/repositories/user/user_repository.dart';
-import 'package:laundryhub/features/authentication/screens/signup.wigets/verify_email.dart';
+import 'package:laundryhub/features/authentication/screens/signup/verify_email.dart';
 import 'package:laundryhub/utils/constants/image_strings.dart';
 import 'package:laundryhub/utils/network/network_manager.dart';
 import 'package:laundryhub/utils/popups/full_screen_loader.dart';

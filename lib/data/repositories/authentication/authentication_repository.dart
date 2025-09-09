@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:laundryhub/features/authentication/screens/login/login.dart';
 import 'package:laundryhub/features/authentication/screens/onboarding/onboarding.dart';
-import 'package:laundryhub/features/authentication/screens/signup.wigets/verify_email.dart';
+import 'package:laundryhub/features/authentication/screens/signup/verify_email.dart';
 import 'package:laundryhub/navigation_menu.dart';
 import 'package:laundryhub/utils/exceptions/firebase_auth_exception.dart';
 import 'package:laundryhub/utils/exceptions/firebase_exception.dart';
