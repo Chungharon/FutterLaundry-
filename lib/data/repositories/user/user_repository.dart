@@ -1,6 +1,11 @@
-import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:laundryhub/data/models/user_model.dart';
+import 'package:laundryhub/utils/exceptions/firebase_exception.dart';
+import 'package:laundryhub/utils/exceptions/format_exception.dart';
+import 'package:laundryhub/utils/exceptions/platform_exception.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 
 /// Respitory class for user-related operations.
 class UserRepository extends GetxController {

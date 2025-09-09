@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:laundryhub/data/models/user_model.dart';
 import 'package:laundryhub/data/repositories/authentication/authentication_repository.dart';
+import 'package:laundryhub/data/repositories/user/user_repository.dart';
+import 'package:laundryhub/features/authentication/screens/signup.wigets/verify_email.dart';
 import 'package:laundryhub/utils/constants/image_strings.dart';
 import 'package:laundryhub/utils/network/network_manager.dart';
 import 'package:laundryhub/utils/popups/full_screen_loader.dart';
@@ -61,19 +62,31 @@ class SignupController extends GetxController {
         userName: userName.text.trim(),
         email: email.text.trim(),
         phoneNumber: phoneNumber.text.trim(),
-        profilePicture: '', username: '',
+        profilePicture: '',
+        username: '',
       );
 
-      
+      final userRepo = Get.put(UserRepository());
+      await userRepo.saveUserData(newUser);
+
+      // Remove loader
+      TFullScreenLoader.stopLoading();
+
+      // Show success message
+      TLoaders.successSnackBar(
+        title: 'Registration Successful',
+        message: 'Welcome aboard, ${newUser.firstName}!',
+      );
+
+      // Move to the email verification screen
+      Get.to(() => VerifyEmailScreen(email: email.text.trim()));
+
     } catch (e) {
       // show some General error
       TLoaders.errorSnackBar(
         title: 'Something went wrong',
         message: e.toString(),
       );
-    } finally {
-      // remove loader
-      TFullScreenLoader.stopLoading();
     }
   }
 }

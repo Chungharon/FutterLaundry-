@@ -39,6 +39,10 @@ dependencies:
   # Firebase Packages
   firebase_core: ^3.15.1
   connectivity_plus: ^6.1.5
+  firebase_auth: 5.6.2
+  firebase_storage: ^12.4.10
+  image_picker: ^1.2.0
+  cloud_firestore: ^5.6.12
 
 
 
