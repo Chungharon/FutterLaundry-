@@ -46,7 +46,7 @@ class UserModel {
       username: "",
       email: "",
       phoneNumber: "",
-      profilePicture: "",
+      profilePicture: "", createdAt: '',
     );
 
   // Convert model to JSON structure for storing data in Firebase.
@@ -72,7 +72,7 @@ class UserModel {
       username: data['Username'] ?? "",
       email: data['Email'] ?? "",
       phoneNumber: data['PhoneNumber'] ?? "",
-      profilePicture: data['ProfilePicture'] ?? "",
+      profilePicture: data['ProfilePicture'] ?? "", createdAt: '',
     );
   }
 }

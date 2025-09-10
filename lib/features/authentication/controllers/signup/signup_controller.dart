@@ -59,11 +59,11 @@ class SignupController extends GetxController {
         id: userCredentials.user!.uid,
         firstName: firstName.text.trim(),
         lastName: lastName.text.trim(),
-        userName: userName.text.trim(),
+        username: userName.text.trim(),
         email: email.text.trim(),
         phoneNumber: phoneNumber.text.trim(),
-        profilePicture: '',
-        username: '',
+        profilePicture: '', 
+        createdAt: '',
       );
 
       final userRepo = Get.put(UserRepository());
