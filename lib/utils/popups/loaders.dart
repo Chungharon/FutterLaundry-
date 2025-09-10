@@ -27,7 +27,7 @@ class TLoaders {
     );
   }
 
-  static void successSnackBar({required title, message = '', duration = 3}) {
+  static void successSnackBar({message = '', duration = 3, required String title}) {
     Get.snackbar(
       title,
       message,
