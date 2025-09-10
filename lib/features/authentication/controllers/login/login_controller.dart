@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:laundryhub/data/repositories/authentication/authentication_repository.dart';
+import 'package:laundryhub/features/personalization/controllers/user_controller.dart';
 import 'package:laundryhub/utils/constants/image_strings.dart';
 import 'package:laundryhub/utils/network/network_manager.dart';
 import 'package:laundryhub/utils/popups/full_screen_loader.dart';
@@ -61,6 +62,41 @@ class LoginController extends GetxController {
             email: email.text.trim(),
             password: password.text.trim(),
           );
+      
+      // Remove Loader
+      TFullScreenLoader.stopLoading();
+
+      // Redirect to Home if login is successful
+      AuthenticationRepository.instance.screenRedirect();
+
+    } catch (e) {
+      TFullScreenLoader.stopLoading();
+      TLoaders.errorSnackBar(title: 'Oh Snap!', message: e.toString());
+    }
+  }
+
+  /// -- Google SignIn
+  Future<void> googleSignIn() async {
+    try {
+      // Start Loading
+      TFullScreenLoader.openLoadingDialog(
+        'Logging you in...',
+        TImages.docerAnimation,
+      );
+
+      // Check Internet Connection
+      final isConnected = await NetworkManager.instance.isConnected();
+      if (!isConnected) {
+        TFullScreenLoader.stopLoading();
+        return;
+      }
+
+      // Login user with Google Authentication
+      final userCredentials = await AuthenticationRepository.instance.signInWithGoogle();
+
+      // Save User data
+      await  UserController.instance.saveUserRecord(userCredentials);
+
       
       // Remove Loader
       TFullScreenLoader.stopLoading();
