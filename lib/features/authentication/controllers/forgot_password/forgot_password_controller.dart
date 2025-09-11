@@ -15,7 +15,7 @@ class ForgotPasswordController extends GetxController {
   GlobalKey<FormState> forgotPasswordFormKey = GlobalKey<FormState>();
 
   /// -- send Reset Password Email
-  sendPasswordResetEmail() async {
+  Future<void> sendPasswordResetEmail() async {
     try {
       // Start Loading
       TFullScreenLoader.openLoadingDialog(
@@ -58,7 +58,7 @@ class ForgotPasswordController extends GetxController {
     }
   }
 
-  resendPasswordResetEmail(String email) async {
+  Future<void> resendPasswordResetEmail(String email) async {
     try {
       // Starting Loading
       TFullScreenLoader.openLoadingDialog(

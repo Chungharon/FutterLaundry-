@@ -1,6 +1,5 @@
 import 'package:laundryhub/utils/formatters/formatter.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-  
 
 class UserModel {
   final String id;
@@ -10,6 +9,10 @@ class UserModel {
   String lastName;
   String phoneNumber;
   String profilePicture;
+  final String dateOfBirth;
+  final String gender;
+  final String address;
+  final String createdAt;
 
   UserModel({
     required this.id,
@@ -18,36 +21,43 @@ class UserModel {
     required this.firstName,
     required this.lastName,
     required this.phoneNumber,
-    required this.profilePicture, required String createdAt
+    required this.profilePicture,
+    required this.dateOfBirth,
+    required this.gender,
+    required this.address,
+    required this.createdAt,
   });
 
   String get fullName => '$firstName $lastName';
 
   String get formattedPhoneNumber => TFormatter.formatPhoneNumber(phoneNumber);
 
-  static List<String> nameParts(fullName) => fullName.split(" ");
+  static List<String> nameParts(String fullName) => fullName.split(" ");
 
-  static String generateUsername(fullName) {
+  static String generateUsername(String fullName) {
     List<String> nameParts = fullName.split(" ");
     String firstName = nameParts[0].toLowerCase();
     String lastName = nameParts.length > 1 ? nameParts[1].toLowerCase() : "";
 
-    String camelCaseUsername =
-        "$firstName$lastName"; 
-    String usernameWithPrefix = "cwt_$camelCaseUsername"; 
+    String camelCaseUsername = "$firstName$lastName";
+    String usernameWithPrefix = "cwt_$camelCaseUsername";
     return usernameWithPrefix;
   }
 
   // Static function to create an empty user model.
   static UserModel empty() => UserModel(
-      id: "",
-      firstName: "",
-      lastName: "",
-      username: "",
-      email: "",
-      phoneNumber: "",
-      profilePicture: "", createdAt: '',
-    );
+        id: "",
+        firstName: "",
+        lastName: "",
+        username: "",
+        email: "",
+        phoneNumber: "",
+        profilePicture: "",
+        dateOfBirth: "",
+        gender: "",
+        address: "",
+        createdAt: "",
+      );
 
   // Convert model to JSON structure for storing data in Firebase.
   Map<String, dynamic> toJson() {
@@ -58,6 +68,10 @@ class UserModel {
       'Email': email,
       'PhoneNumber': phoneNumber,
       'ProfilePicture': profilePicture,
+      'DateOfBirth': dateOfBirth,
+      'Gender': gender,
+      'Address': address,
+      'CreatedAt': createdAt,
     };
   }
 
@@ -72,7 +86,11 @@ class UserModel {
       username: data['Username'] ?? "",
       email: data['Email'] ?? "",
       phoneNumber: data['PhoneNumber'] ?? "",
-      profilePicture: data['ProfilePicture'] ?? "", createdAt: '',
+      profilePicture: data['ProfilePicture'] ?? "",
+      dateOfBirth: data['DateOfBirth'] ?? "",
+      gender: data['Gender'] ?? "",
+      address: data['Address'] ?? "",
+      createdAt: data['CreatedAt'] ?? "",
     );
   }
 }
