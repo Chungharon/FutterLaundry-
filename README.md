@@ -33,8 +33,8 @@ Laundry Hub is a comprehensive application designed to streamline laundry servic
 * **Frontend:** **React Native**, **Expo**, TypeScript, React Navigation, React Native Paper, React Native Vector Icons
 * **State Management:** Redux / Context API
 * **Backend:** Firebase (Firestore, Authentication, Cloud Functions) / Node.js
-* **Payment Gateways:** M-Pesa API, Stripe
-* **UI/Charting:** React Native Elements / Custom Components, React Native Charts Wrapper / Victory Native
+* **Payment Gateways:** M-Pesa API, Stripe, Pesapal, NCBA API PayBill/KCB/CO-OPERATIVE & Artel Money
+* **UI/Charting:** React Native Elements / Custom Components, React Native Charts Wrapper / Victory Native / Flutter
 
 -----
 
@@ -58,7 +58,7 @@ Laundry Hub is a comprehensive application designed to streamline laundry servic
 2. **Install dependencies:**
 
     ```bash
-    npm install
+    pnpm install
     # or
     yarn install
     ```
@@ -66,7 +66,7 @@ Laundry Hub is a comprehensive application designed to streamline laundry servic
 3. **Start the development server:**
 
     ```bash
-    npm start
+    pnpm start
     # or
     yarn start
     ```
@@ -74,6 +74,7 @@ Laundry Hub is a comprehensive application designed to streamline laundry servic
 4. **Run on your device:**
 
       * Install the **Expo Go** app on your mobile device.
+      * Install the **X-CODE** for iOS devices.
       * Scan the QR code displayed in your terminal or Expo DevTools.
 
 -----
