@@ -1,6 +1,6 @@
 -----
 
-# 🧺 Laundry Hub
+# Laundry Hub
 
 Your convenient cross-platform mobile solution for all laundry needs.
 
@@ -8,7 +8,7 @@ Laundry Hub is a comprehensive application designed to streamline laundry servic
 
 -----
 
-## ✨ Key Features
+## Key Features
 
 ### For Customers
 
@@ -28,7 +28,7 @@ Laundry Hub is a comprehensive application designed to streamline laundry servic
 
 -----
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Frontend:** **React Native**, **Expo**, TypeScript, React Navigation, React Native Paper, React Native Vector Icons
 * **State Management:** Redux / Context API
@@ -38,7 +38,7 @@ Laundry Hub is a comprehensive application designed to streamline laundry servic
 
 -----
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -78,7 +78,7 @@ Laundry Hub is a comprehensive application designed to streamline laundry servic
 
 -----
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 
@@ -97,7 +97,7 @@ laundry-hub/
 
 -----
 
-## 👋 Contributing
+## Contributing
 
 Contributions are welcome\! Please follow these steps:
 
@@ -109,7 +109,7 @@ Contributions are welcome\! Please follow these steps:
 
 -----
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
 
